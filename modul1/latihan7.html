@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 7</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <button v-on:click="pesan">Jangan di klik</button>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            methods: {
+                pesan: function() {
+                    alert("kan udah di ingetin")
+                    alert("ayo belajar jangan berhenti kita raih mimpi ")
+                }
+            }
+        })
+    </script>
+</body>
+</html>

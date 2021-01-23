@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 6</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <ol>
+            <li v-for="k in kelas">{{k}}</li>
+        </ol>
+        <ol>
+            <li v-for="(k, index) in kelas" :key="index">
+                Item ke-{{index}} adalah {{k}}
+            </li>
+        </ol>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                "kelas" : ["XIRPL6", "XI RPL 6 lagi ", "XI RPL 6 (lagi)", "XI RPL 6 aja ws ",
+                 "XI RPL 6 (gak mau yang lain)",]
+            }
+            
+        })
+    </script>
+</body>
+</html>
